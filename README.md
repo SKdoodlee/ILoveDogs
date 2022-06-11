@@ -9,7 +9,7 @@ Gabriel Almeida Rolle,              171349,          PA038TIN3,      CP110TIN2
 
 Wallace Henrique Palma Galli,       171850,          Nenhuma,        CP110TIN2
 
-Carlos Eduardo Ferreira da Silva,   223748,          Nenhuma,     
+Carlos Eduardo Ferreira da Silva,   223748,          Nenhuma,       CP110TIN1
 
 
 
