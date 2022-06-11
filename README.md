@@ -1,6 +1,6 @@
 # ILoveDogs
 
-Nome dos compotenetes do grupo
+Nome dos componentes do grupo
 
 
 Gabriella Cristina S. de Paula,     190036,          PA038TIN3,      CP110TIN2
