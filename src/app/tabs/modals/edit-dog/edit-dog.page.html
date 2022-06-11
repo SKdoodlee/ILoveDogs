@@ -1,0 +1,197 @@
+<ion-header>
+    <ion-toolbar>
+
+        <ion-buttons slot="start">
+            <ion-button (click)="closeModal()">
+                <ion-icon name="close-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+
+        <ion-title class="pr-2" style="font-size: medium;">Editar perfil</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form [formGroup]="editDogForm">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label position="floating">Nome</ion-label>
+                        <ion-input formControlName="name"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label position="floating">Tamanho</ion-label>
+                        <ion-select formControlName="size" placeholder="Selecione o tamanho">
+                            <ion-select-option value="Pequeno">Pequeno</ion-select-option>
+                            <ion-select-option value="Médio">Médio</ion-select-option>
+                            <ion-select-option value="Grande">Grande</ion-select-option>
+                        </ion-select>
+
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label position="floating">Idade</ion-label>
+                        <ion-select formControlName="age" placeholder="Selecione a idade">
+                            <ion-select-option value="Filhote">Filhote</ion-select-option>
+                            <ion-select-option value="Adulto">Adulto</ion-select-option>
+                            <ion-select-option value="Idoso">Idoso</ion-select-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label position="floating">Pelo</ion-label>
+                        <ion-select formControlName="coat" placeholder="Selecione o tipo de pelo">
+                            <ion-select-option value="Curto">Curto</ion-select-option>
+                            <ion-select-option value="Médio">Médio</ion-select-option>
+                            <ion-select-option value="Grande">Grande</ion-select-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label position="floating">Compátivel com adultos</ion-label>
+                        <ion-select formControlName="behaviourSenior" placeholder="É compátivel com adultos?">
+                            <ion-select-option value="Sim">Sim</ion-select-option>
+                            <ion-select-option value="Não">Não</ion-select-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label position="floating">Compátivel com crianças</ion-label>
+                        <ion-select formControlName="behaviourKids" placeholder="É compátivel com crianças?">
+                            <ion-select-option value="Sim">Sim</ion-select-option>
+                            <ion-select-option value="Não">Não</ion-select-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label position="floating">Compátivel com outros cachorros</ion-label>
+                        <ion-select formControlName="behaviourDogs" placeholder="É compátivel com outros cachorros?">
+                            <ion-select-option value="Sim">Sim</ion-select-option>
+                            <ion-select-option value="Não">Não</ion-select-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label position="floating">Compátivel com gatos</ion-label>
+                        <ion-select formControlName="behaviourCats" placeholder="É compátivel com gatos?">
+                            <ion-select-option value="Sim">Sim</ion-select-option>
+                            <ion-select-option value="Não">Não</ion-select-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label position="floating">Data que foi encontrado?</ion-label>
+                        <ion-datetime formControlName="found" displayFormat="DD MM YYYY" placeholder="10/06/2022">
+                        </ion-datetime>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label position="floating">Lugar que foi encontrado</ion-label>
+                        <ion-input formControlName="fplace" placeholder="Praça 123, Centro"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label position="floating">Cor</ion-label>
+                        <ion-textarea formControlName="color" placeholder="Preto e Branco">
+                        </ion-textarea>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label position="floating">Descripción</ion-label>
+                        <ion-textarea formControlName="Descrição" placeholder="Descrição sobre o cachorro">
+                        </ion-textarea>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+
+            <b></b>
+
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label position="floating">Possui coleira? Sim ou Não. Se sim, escreva as informações</ion-label>
+                        <ion-textarea formControlName="collar" placeholder="Informações da coleira">
+
+                        </ion-textarea>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label position="floating">Status</ion-label>
+                        <ion-select formControlName="status" placeholder="Selecione o status">
+                            <ion-select-option value="Adoção">Adoção</ion-select-option>
+                            <ion-select-option value="Lugar Temporario">Lugar Temporario</ion-select-option>
+                            <ion-select-option value="Perdido">Perdido</ion-select-option>
+                        </ion-select>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <img [src]="displayPhoto || 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/photo-3nav-button-icon.png' " (click)="presentActionSheet()">
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="12 ">
+                    <ion-button color="primary " expand="block " fill="solid " (click)="updateDog()">Fazer alterações
+                    </ion-button>
+                </ion-col>
+                <ion-col size="12 ">
+                    <ion-button (click)="closeModal() " expand="block " fill="outline ">Cancelar</ion-button>
+                </ion-col>
+
+            </ion-row>
+
+        </ion-grid>
+    </form>
+</ion-content>

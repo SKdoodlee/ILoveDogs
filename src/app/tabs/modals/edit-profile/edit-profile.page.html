@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="primary">
+            <ion-button (click)="openModalCredentials(user?.id)">
+                <ion-icon name="key-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>Alterar perfil</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form [formGroup]="editUserForm">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label position="floating">Nome da instituição</ion-label>
+                        <ion-input formControlName="nameDogPound"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label position="floating">Endereçõ</ion-label>
+                        <ion-input formControlName="address"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-label position="floating">Telefone</ion-label>
+                        <ion-input formControlName="phone"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+    </form>
+    <ion-button (click)="updateUser()" expand="block">Alterar</ion-button>
+    <ion-button fill="outline" (click)="closeModal()" expand="block">Cancelar</ion-button>
+
+</ion-content>
+
+<ion-footer>
+    <ion-button color="danger" (click)="openModalDelete()" expand="block">Excluir</ion-button>
+</ion-footer>

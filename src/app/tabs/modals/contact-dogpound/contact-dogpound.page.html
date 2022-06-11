@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Contato</ion-title>
+        <ion-buttons slot="end">
+            <ion-button (click)="closeModalContact()">Fechar</ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-grid>
+        <h1>Canil Municipal</h1>
+        <img src="https://pbs.twimg.com/profile_images/943588778735820801/b7RHdz25.jpg">
+        <ion-col>
+            <p>Avenida 123, Centro, Sorocaba-SP</p>
+            <p>Tel:15990011189</p>
+            <p>Horarios: 8:00 às 18:00</p>
+        </ion-col>
+    </ion-grid>
+</ion-content>
+
+<ion-footer>
+    <ion-button *ngIf="!user?.actives.includes(dID)" (click)="toggleActive()" expand="block" fill="outline">Mandar solicitação de adoção</ion-button>
+    <ion-button *ngIf="user?.actives.includes(dID)" color="danger" (click)="toggleActive()" expand="block" fill="outline">Cancelar Solicitação de adoção</ion-button>
+</ion-footer>

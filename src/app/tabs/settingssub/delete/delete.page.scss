@@ -1,0 +1,68 @@
+.title {
+    font-size: 32px;
+}
+
+.headTitle {
+    margin-top: 5%;
+}
+
+
+.headText {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #005959;
+    text-align: center;
+    line-height: normal;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-weight: 500;
+}
+
+
+.deleteButton {
+    margin-top: 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: #00a7a7;
+    border-color: #00a7a7;
+}
+
+.lbl {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: black;
+    text-align: left;
+    line-height: normal;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+ion-col {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ion-header {
+    ion-toolbar {
+        ion-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0 90px 1px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+    }
+}
+
+ion-icon {
+    color: teal;
+}
+
+ion-back-button {
+    --color: teal !important;
+}

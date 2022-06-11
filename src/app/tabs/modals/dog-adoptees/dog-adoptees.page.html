@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button (click)="closeModal()">
+                <ion-icon name="close-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+
+        <ion-title class="pr-2" style="font-size: medium;">Solicitação de Adoção</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item-sliding *ngFor="let adoptee of Adoptees">
+            <ion-item>
+                <ion-label>{{ adoptee }}</ion-label>
+            </ion-item>
+        </ion-item-sliding>
+    </ion-list>
+
+</ion-content>

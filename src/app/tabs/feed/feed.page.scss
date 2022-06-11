@@ -1,0 +1,45 @@
+ion-header {
+    ion-toolbar {
+        ion-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0 90px 1px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+    }
+}
+
+ion-item {
+    margin: 15px 15px 15px 0px;
+}
+
+ion-label {
+    margin: 0px !important;
+}
+
+ion-content {
+    .arrow-icon {
+        font-size: 15px;
+        margin-top: 25px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    ion-thumbnail {
+        width: 90px;
+        height: 90px;
+        margin: px 10px 0px 0px;
+        img {
+            width: 90px;
+            height: 90px;
+            border-radius: 5px !important;
+        }
+    }
+    ion-item {
+        --padding-end: 0px;
+        --inner-padding-end: 0px;
+        // here other custom CSS from documentation
+    }
+}

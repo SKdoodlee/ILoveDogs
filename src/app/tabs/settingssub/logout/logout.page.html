@@ -1,0 +1,34 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title style="text-align: center ; font-size: medium;">IloveDogs</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-grid>
+
+        <ion-row>
+            <ion-col class="headTitle" size="12">
+                <ion-text class="title">Logout</ion-text>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col class="headText" size="12">
+                <ion-text>Aperta o botão para fazer o logout</ion-text>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col size="12">
+                <ion-button color="danger" (click)="logout()" expand="block">Logout</ion-button>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+
+</ion-content>

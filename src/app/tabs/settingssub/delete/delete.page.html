@@ -1,0 +1,42 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title style="text-align: center ; font-size: medium;">IloveDogs</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+
+    <ion-grid>
+
+        <ion-row>
+            <ion-col size="12">
+                <h4 class="headText">Excluir conta</h4>
+            </ion-col>
+        </ion-row>
+
+        <form>
+            <ion-grid>
+                <ion-row>
+                    <ion-col size="12">
+                        <ion-item>
+                            <ion-input placeholder="Senha" [type]="showPassword ? 'text' : 'password'"
+                                clearOnEdit="false" [(ngModel)]="password" name="password"></ion-input>
+                            <ion-button (click)="onPasswordToggle()" fill="clear">
+                                <ion-icon [name]="showPassword ? 'eye-off-outline' : 'eye-outline'"></ion-icon>
+                            </ion-button>
+                        </ion-item>
+                        <ion-button color="danger" size="medium" (click)="deleteAccount()" expand="block"
+                            style="margin-top: 20px;">Excluir
+                        </ion-button>
+                        <ion-button class="deleteButton" size="medium" (click)="goBack()" expand="block" fill="clear">
+                            Cancelar</ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </form>
+
+    </ion-grid>
+
+</ion-content>

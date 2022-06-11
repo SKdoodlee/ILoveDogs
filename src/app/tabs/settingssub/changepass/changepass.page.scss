@@ -1,0 +1,122 @@
+.title {
+    font-size: 32px;
+}
+
+.headTitle {
+    margin-top: 5%;
+}
+
+.formRow {
+    margin-top: 20px;
+}
+
+ion-icon {
+    color: teal;
+}
+
+.formButton {
+    margin-top: 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: #00a7a7;
+    border-color: #00a7a7;
+}
+
+.headText {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #005959;
+    text-align: center;
+    line-height: normal;
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.lbl {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #005959;
+    text-align: left;
+    line-height: normal;
+    padding-left: 5px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.form-title {
+    margin-top: 20px;
+}
+
+ion-header {
+    ion-toolbar {
+        ion-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0 90px 1px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+    }
+}
+
+
+ion-col {
+
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ion-content {
+
+    h5 {
+        padding: 5px 16px 5px 16px;
+    }
+
+    ion-grid,
+    .header-container {
+        padding: 5px 16px 5px 16px;
+    }
+
+    .password {
+        ion-icon {
+            font-size: 16px;
+            background: transparent;
+        }
+    }
+
+    .login {
+        font-size: 10px;
+    }
+
+    .forget {
+        font-size: 12px;
+    }
+}
+
+ion-footer {
+    ion-toolbar {
+        --padding-top: 0;
+        --padding-bottom: 0;
+        --padding-start: 0;
+        --padding-end: 0;
+
+        ion-button {
+            --padding-top: 0;
+            --padding-bottom: 0;
+            --padding-start: 0;
+            --padding-end: 0;
+            margin: 0;
+
+            &.md {
+                height: 56px;
+            }
+        }
+    }
+}
+
+ion-back-button {
+    --color: teal !important;
+}

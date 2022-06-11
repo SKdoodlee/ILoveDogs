@@ -1,0 +1,33 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+    
+        <ion-buttons slot="primary">
+            <ion-button>
+                <ion-icon slot="end" name="funnel-outline"> </ion-icon>
+            </ion-button>
+        </ion-buttons>
+
+        <ion-title class="px-0" style="text-align: center; font-size: medium;">ILoveDogs</ion-title>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list class="ion-no-padding">
+        <div *ngFor="let dog of Dogs">
+            <ion-item *ngIf="dog?.idDogPound === user?.id" (click)="openModalDogProfile(dog?.id)">
+                <ion-thumbnail slot="start">
+                    <img [src]="dog?.profilepic || 'https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/photo-3nav-button-icon.png'">
+                </ion-thumbnail>
+                <ion-label class="dogsep">
+                    <h3>{{ dog?.name }}</h3>
+                    <p>{{ dog?.breed }}</p>
+                    <p>{{dog?.sex}} &middot; {{ dog?.age }} &middot; {{ dog?.size }}</p>
+                </ion-label>
+                <ion-note slot="end" class="arrow-icon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </ion-note>
+            </ion-item>
+        </div>
+    </ion-list>
+</ion-content>

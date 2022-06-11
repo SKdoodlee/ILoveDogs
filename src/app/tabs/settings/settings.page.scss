@@ -1,0 +1,74 @@
+.about {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #ced7d8;
+    font-size: small;
+    text-align: center !important;
+    position: absolute;
+    bottom: 0;
+}
+
+.logout-button {
+    margin-bottom: 25px;
+    height: 45px;
+    font-size: 16px;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0px;
+}
+
+.logOutSection {
+    top: 200px
+}
+
+
+.headText {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #005959;
+    text-align: center;
+    line-height: normal;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-weight: 500;
+}
+
+.buttonsSection {
+    margin-top: 30px;
+}
+
+.settings-button {
+    margin-bottom: 25px;
+    height: 45px;
+    font-size: 16px;
+}
+
+ion-button {
+    --ion-color-primary: #00a7a7;
+}
+
+ion-col {
+
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ion-card-content {
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+}
+
+ion-card {
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+
+}

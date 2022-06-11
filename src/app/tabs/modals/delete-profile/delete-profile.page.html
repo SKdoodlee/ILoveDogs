@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Borrar cuenta</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="header-container">
+        <h4>Deseja exlcuir sua conta?</h4>
+        <p style="font-size: 14px;">Para excluir sua conta digite novamente a Senha</p>
+    </div>
+
+    <form>
+        <ion-grid>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-item>
+                        <ion-input placeholder="Senha" [type]="showPassword ? 'text' : 'password'" clearOnEdit="false" [(ngModel)]="password" name="password"></ion-input>
+                        <button (click)="onPasswordToggle()" ion-button clear small item-end icon-only>
+              <ion-icon [name]="showPassword ? 'eye-off-outline' : 'eye-outline'"></ion-icon>
+             </button>
+                    </ion-item>
+                    <ion-button color="danger" size="small" (click)="deleteAccount()" expand="block">Enviar</ion-button>
+                    <ion-button size="small" (click)="closeModal()" expand="block" fill="outline">Cancelar</ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </form>
+</ion-content>

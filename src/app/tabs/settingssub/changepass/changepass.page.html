@@ -1,0 +1,89 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title class="px-0" style="text-align: center; font-size: medium;">IloveDogs</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-grid>
+
+        <ion-row>
+            <ion-col size="12">
+                <h3 class="headText">Trocar Senha</h3>
+            </ion-col>
+        </ion-row>
+
+        <form [formGroup]="editUserForm" *ngIf="editUserForm">
+
+            <ion-row class="formRow">
+                <ion-col size="12">
+                    <ion-label class="lbl">Insira sua senha</ion-label>
+                    <ion-item class="password">
+                        <ion-input formControlName="cPassword" placeholder="Senha atual"
+                            [type]="showCurrentPassword ? 'text' : 'password'" clearOnEdit="false"></ion-input>
+                        <ion-button (click)="onCurrentPasswordToggle()" fill="clear">
+                            <ion-icon [name]="showCurrentPassword ? 'eye-off-outline' : 'eye-outline'"></ion-icon>
+                        </ion-button>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="formRow">
+                <ion-col size="12">
+                    <ion-text class="lbl">Alterar e-mail</ion-text>
+                    <ion-item class="password">
+                        <ion-input formControlName="email"></ion-input>
+                    </ion-item>
+                    <section>
+                        <ion-button class="formButton" (click)="updateEmail()" expand="block" fill="clear">
+                            Alterar e-mail
+                        </ion-button>
+
+                    </section>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="formRow">
+                <ion-col size="12">
+                    <ion-label class="lbl">Alterar senha</ion-label>
+                    <ion-item class="password">
+                        <ion-input formControlName="nPassword" placeholder="Nova senha"
+                            [type]="showPassword ? 'text' : 'password'" clearOnEdit="false"></ion-input>
+                        <ion-button (click)="onPasswordToggle()" fill="clear">
+                            <ion-icon [name]="showPassword ? 'eye-off-outline' : 'eye-outline'"></ion-icon>
+                        </ion-button>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="formRow">
+                <ion-col size="12">
+                    <ion-item class="password">
+                        <ion-input formControlName="ncPassword" placeholder="Confirmar nova senha"
+                            [type]="showConfirmedPassword ? 'text' : 'password'" clearOnEdit="false"></ion-input>
+                        <ion-button (click)="onConfirmPasswordToggle()" fill="clear">
+                            <ion-icon [name]="showConfirmedPassword ? 'eye-off-outline' : 'eye-outline'"></ion-icon>
+                        </ion-button>
+                    </ion-item>
+                    <section>
+                        <ion-button class="formButton" (click)="updatePassword()" expand="block" fill="clear">Alterar senha</ion-button>
+                    </section>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="12">
+                    <section>
+                        <ion-button color="danger" (click)="goBack()" expand="block">Cancelar</ion-button>
+                    </section>
+                </ion-col>
+            </ion-row>
+        </form>
+
+    </ion-grid>
+
+</ion-content>

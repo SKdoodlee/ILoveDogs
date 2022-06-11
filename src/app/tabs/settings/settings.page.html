@@ -1,0 +1,55 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap');
+</style>
+
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title class="px-0" style="text-align: center; font-size: medium;">IloveDogs</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-grid>
+
+        <ion-row>
+            <ion-col size="12">
+                <h3 class="headText">Configuração</h3>
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="buttonsSection">
+            <ion-col size="12">
+                <section class="full-width settings-button">
+                    <ion-button class="settings-button" expand="block" (click)="gotoEditProfile()">
+                        Editar Perfil</ion-button>
+                </section>
+                
+                <section class="full-width">
+                    <ion-button class="settings-button" expand="block" (click)="gotoChangePass()">
+                        Alterar senha</ion-button>
+                </section>
+
+                <section class="full-width">
+                    <ion-button class="settings-button" expand="block" (click)="gotoDelete()">
+                        Excluir conta</ion-button>
+                </section>
+
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col class="logOutSection" size="12">
+                <section class="full-width ">
+                    <ion-button class="logout-button" color="danger" expand="block" (click)="gotoLogout()">
+                        Encerrar sessão</ion-button>
+                </section>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+
+</ion-content>
