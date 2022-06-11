@@ -36,7 +36,7 @@ Tela de Registro de Usuário
 
 
 ![WhatsApp Image 2022-06-11 at 19 15 12](https://user-images.githubusercontent.com/70352279/173207331-68335b0f-2608-43e9-abd2-195b80fe1418.jpeg)  
-Tela de Registro de Usuário
+Tela de cadastro para o perfil do cachorro
 
 
 ![WhatsApp Image 2022-06-11 at 19 14 32](https://user-images.githubusercontent.com/70352279/173207340-320e499e-d252-4957-a8ea-605b50ca21d5.jpeg)  
